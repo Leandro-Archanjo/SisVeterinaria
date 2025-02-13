@@ -27,6 +27,13 @@ namespace SisVeterinaria.Entities
             Tratamentos.Add(tratamento);
         }
 
+        public void ListarTratamentos()
+        {
+            foreach (Tratamento t in Tratamentos)
+            {
+                Console.WriteLine(t);
+            }
+        }
         public override string ToString()
         {
             return Nome + " " +
