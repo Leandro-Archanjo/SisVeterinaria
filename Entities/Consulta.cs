@@ -26,6 +26,14 @@ namespace SisVeterinaria.Entities
             Exames.Add(exame);
         }
 
+        public void ListarExames()
+        {
+            foreach (Exame ex in Exames)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
         public override string ToString()
         {
             return Data.ToString("dd/MM/yyyy") + " " + Resumo;
