@@ -19,6 +19,18 @@ namespace SisVeterinaria.Entities
             Endereco = endereco;
             Telefone = telefone;
         }
+        public void AddAnimais(Animal animal)
+        {
+            Animais.Add(animal);
+        }
+
+        public void ListarAnimais()
+        {
+            foreach (Animal a in Animais)
+            {
+                Console.WriteLine(a);
+            }
+        }
 
         public override string ToString()
         {
