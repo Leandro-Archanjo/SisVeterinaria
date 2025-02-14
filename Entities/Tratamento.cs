@@ -14,5 +14,13 @@ namespace SisVeterinaria.Entities
         {
             Consultas.Add(consulta);
         }
+
+        public void ListarConsultas()
+        {
+            foreach (Consulta consul in Consultas)
+            {
+                Console.WriteLine(consul);
+            }
+        }
     }
 }
